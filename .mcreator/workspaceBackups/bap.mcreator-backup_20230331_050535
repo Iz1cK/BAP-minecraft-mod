@@ -1,0 +1,624 @@
+{
+  "mod_elements": [
+    {
+      "name": "GeorgiumOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georgium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bap/models/item/georgium_ore.json",
+          "src/main/resources/assets/bap/blockstates/georgium_ore.json",
+          "src/main/java/net/mcreator/bap/world/features/ores/GeorgiumOreFeature.java",
+          "src/main/resources/data/bap/forge/biome_modifier/georgium_ore_biome_modifier.json",
+          "src/main/resources/assets/bap/models/block/georgium_ore.json",
+          "src/main/java/net/mcreator/bap/block/GeorgiumOreBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "GeorgiumIngot",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georgium_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bap/models/item/georgium_ingot.json",
+          "src/main/java/net/mcreator/bap/item/GeorgiumIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GeorgiumJobrator",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georgium_jobrator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/block/GeorgiumJobratorBlock.java",
+          "src/main/resources/assets/bap/blockstates/georgium_jobrator.json",
+          "src/main/resources/assets/bap/models/item/georgium_jobrator.json",
+          "src/main/resources/assets/bap/models/block/georgium_jobrator.json",
+          "src/main/java/net/mcreator/bap/block/entity/GeorgiumJobratorBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "GeorgiumJobratonUpdateTick",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georgium_jobraton_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/GeorgiumJobratonUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProgressBar0",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar1",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar2",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar3",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar4",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar5",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar6",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar7",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar8",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar9",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar10",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "ProgressBar11",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_bar_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/ProgressBar11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProgessBarDisplays"
+    },
+    {
+      "name": "NormalCapacitor",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "normal_capacitor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bap/models/item/normal_capacitor.json",
+          "src/main/java/net/mcreator/bap/item/NormalCapacitorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MoriCapacitor",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mori_capacitor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/item/MoriCapacitorItem.java",
+          "src/main/resources/assets/bap/models/item/mori_capacitor.json"
+        ]
+      }
+    },
+    {
+      "name": "GeorgeCapacitor",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "george_capacitor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/item/GeorgeCapacitorItem.java",
+          "src/main/resources/assets/bap/models/item/george_capacitor.json"
+        ]
+      }
+    },
+    {
+      "name": "GeorgiumJobratorNewGui",
+      "type": "gui",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georgium_jobrator_new_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/client/gui/GeorgiumJobratorNewGuiScreen.java",
+          "src/main/java/net/mcreator/bap/world/inventory/GeorgiumJobratorNewGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "BAP",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bap",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "GeorginatorItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georginator_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Georginator",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georginator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/item/GeorginatorItem.java",
+          "src/main/resources/assets/bap/models/item/georginator.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabbap": "BAP",
+      "item.bap.georginator": "Georginator",
+      "gui.bap.georgium_jobrator_gui.button_test": "test",
+      "block.bap.georgium_jobrator": "Georgium Jobrator",
+      "item.bap.normal_capacitor": "Nur Capacitor",
+      "block.bap.georgium_ore": "Georgium Ore",
+      "gui.bap.georgium_jobrator_new_gui.label_georgium_febrator": "Georgium Febrator",
+      "item.bap.mori_capacitor": "Mori Capacitor",
+      "item.bap.georgium_ingot": "Georgium Ingot",
+      "item.bap.george_capacitor": "George Capacitor"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "ProgessBarDisplays",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "bap",
+    "modName": "BAP",
+    "version": "1.0.0",
+    "author": "win10, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.bap",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

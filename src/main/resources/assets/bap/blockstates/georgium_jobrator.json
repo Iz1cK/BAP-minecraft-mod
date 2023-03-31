@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bap:block/georgium_jobrator"
+    },
+    "facing=east": {
+      "model": "bap:block/georgium_jobrator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bap:block/georgium_jobrator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bap:block/georgium_jobrator",
+      "y": 270
+    }
+  }
+}

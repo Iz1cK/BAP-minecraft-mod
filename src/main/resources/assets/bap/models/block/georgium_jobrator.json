@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bap:blocks/georgium_jobrator_top",
+    "up": "bap:blocks/georgium_jobrator_top",
+    "north": "bap:blocks/georgeium_jobrator_front",
+    "east": "bap:blocks/georgium_jobrator_side",
+    "south": "bap:blocks/georgium_jobrator_side",
+    "west": "bap:blocks/georgium_jobrator_side",
+    "particle": "bap:blocks/georgium_jobrator_top"
+  },
+  "render_type": "solid"
+}

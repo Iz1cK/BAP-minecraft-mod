@@ -1,0 +1,136 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2023-03-30 19:47:44
+Description: Exception ticking world
+
+java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 2
+	at java.util.Arrays$ArrayList.get(Arrays.java:4165) ~[?:?] {}
+	at net.minecraft.core.NonNullList.get(NonNullList.java:43) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity.getItem(RandomizableContainerBlockEntity.java:97) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraftforge.items.wrapper.InvWrapper.getStackInSlot(InvWrapper.java:53) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23182%23189!/:?] {re:classloading}
+	at net.mcreator.bap.procedures.GeorgiumJobratonUpdateTickProcedure$1.lambda$getItemStack$0(GeorgiumJobratonUpdateTickProcedure.java:27) ~[%23188!/:?] {re:classloading}
+	at net.minecraftforge.common.util.LazyOptional.ifPresent(LazyOptional.java:150) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23182%23189!/:?] {re:classloading}
+	at net.mcreator.bap.procedures.GeorgiumJobratonUpdateTickProcedure$1.getItemStack(GeorgiumJobratonUpdateTickProcedure.java:27) ~[%23188!/:?] {re:classloading}
+	at net.mcreator.bap.procedures.GeorgiumJobratonUpdateTickProcedure.execute(GeorgiumJobratonUpdateTickProcedure.java:30) ~[%23188!/:?] {re:classloading}
+	at net.mcreator.bap.block.GeorgiumJobratorBlock.tick(GeorgiumJobratorBlock.java:112) ~[%23188!/:?] {re:classloading}
+	at net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.tick(BlockBehaviour.java:694) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tickBlock(ServerLevel.java:645) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.ticks.LevelTicks.runCollectedTicks(LevelTicks.java:196) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.world.ticks.LevelTicks.tick(LevelTicks.java:93) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:276) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.Arrays$ArrayList.get(Arrays.java:4165) ~[?:?] {}
+	at net.minecraft.core.NonNullList.get(NonNullList.java:43) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity.getItem(RandomizableContainerBlockEntity.java:97) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraftforge.items.wrapper.InvWrapper.getStackInSlot(InvWrapper.java:53) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23182%23189!/:?] {re:classloading}
+	at net.mcreator.bap.procedures.GeorgiumJobratonUpdateTickProcedure$1.lambda$getItemStack$0(GeorgiumJobratonUpdateTickProcedure.java:27) ~[%23188!/:?] {re:classloading}
+	at net.minecraftforge.common.util.LazyOptional.ifPresent(LazyOptional.java:150) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23182%23189!/:?] {re:classloading}
+	at net.mcreator.bap.procedures.GeorgiumJobratonUpdateTickProcedure$1.getItemStack(GeorgiumJobratonUpdateTickProcedure.java:27) ~[%23188!/:?] {re:classloading}
+	at net.mcreator.bap.procedures.GeorgiumJobratonUpdateTickProcedure.execute(GeorgiumJobratonUpdateTickProcedure.java:30) ~[%23188!/:?] {re:classloading}
+	at net.mcreator.bap.block.GeorgiumJobratorBlock.tick(GeorgiumJobratorBlock.java:112) ~[%23188!/:?] {re:classloading}
+	at net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.tick(BlockBehaviour.java:694) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tickBlock(ServerLevel.java:645) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.ticks.LevelTicks.runCollectedTicks(LevelTicks.java:196) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.world.ticks.LevelTicks.tick(LevelTicks.java:93) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:276) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Dev'/84, l='ServerLevel[New World]', x=-80.58, y=64.00, z=152.47]]
+	Chunk stats: 2789
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-80,63,160), Section: (at 0,15,0 in -5,3,10; chunk contains blocks -80,-64,160 to -65,319,175), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Level time: 421 game time, 421 day time
+	Level name: New World
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: true
+	Level weather: Rain time: 163505 (now: false), thunder time: 163762 (now: false)
+	Known server brands: forge
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:866) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:806) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 737700280 bytes (703 MiB) / 2432696320 bytes (2320 MiB) up to 8560574464 bytes (8164 MiB)
+	CPUs: 20
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i9-10900F CPU @ 2.80GHz
+	Identifier: Intel64 Family 6 Model 165 Stepping 5
+	Microarchitecture: unknown
+	Frequency (GHz): 2.81
+	Number of physical packages: 1
+	Number of physical CPUs: 10
+	Number of logical CPUs: 20
+	Graphics card #0 name: NVIDIA GeForce RTX 3070
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2484
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.2698
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 60838.14
+	Virtual memory used (MB): 53919.15
+	Swap memory total (MB): 28192.52
+	Swap memory used (MB): 2107.46
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/84, l='ServerLevel[New World]', x=-80.58, y=64.00, z=152.47]]
+	Data Packs: vanilla, mod:bap, mod:forge
+	World Generation: Experimental
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		main                                              |BAP                           |bap                           |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.|Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |43.2.0              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: a01d8a2a-bab0-4202-9bf9-5ade6d4e418a
+	FML: 43.2
+	Forge: net.minecraftforge:43.2.0

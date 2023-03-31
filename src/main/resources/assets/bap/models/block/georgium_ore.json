@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "bap:blocks/georgium_ore",
+    "particle": "bap:blocks/georgium_ore"
+  },
+  "render_type": "solid"
+}
