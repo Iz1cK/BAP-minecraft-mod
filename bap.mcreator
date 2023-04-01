@@ -47,7 +47,8 @@
           "src/main/resources/assets/bap/models/block/georgium_jobrator.json",
           "src/main/java/net/mcreator/bap/block/entity/GeorgiumJobratorBlockEntity.java"
         ]
-      }
+      },
+      "path": "~/GeorgiumJobrator"
     },
     {
       "name": "GeorgiumJobratonUpdateTick",
@@ -78,7 +79,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/GeorgiumJobrator"
     },
     {
       "name": "ProgressBar0",
@@ -488,7 +490,8 @@
           "src/main/resources/assets/bap/models/item/normal_capacitor.json",
           "src/main/java/net/mcreator/bap/item/NormalCapacitorItem.java"
         ]
-      }
+      },
+      "path": "~/GeorgiumJobrator"
     },
     {
       "name": "MoriCapacitor",
@@ -502,7 +505,8 @@
           "src/main/java/net/mcreator/bap/item/MoriCapacitorItem.java",
           "src/main/resources/assets/bap/models/item/mori_capacitor.json"
         ]
-      }
+      },
+      "path": "~/GeorgiumJobrator"
     },
     {
       "name": "GeorgeCapacitor",
@@ -516,7 +520,8 @@
           "src/main/java/net/mcreator/bap/item/GeorgeCapacitorItem.java",
           "src/main/resources/assets/bap/models/item/george_capacitor.json"
         ]
-      }
+      },
+      "path": "~/GeorgiumJobrator"
     },
     {
       "name": "GeorgiumJobratorNewGui",
@@ -530,7 +535,8 @@
           "src/main/java/net/mcreator/bap/client/gui/GeorgiumJobratorNewGuiScreen.java",
           "src/main/java/net/mcreator/bap/world/inventory/GeorgiumJobratorNewGuiMenu.java"
         ]
-      }
+      },
+      "path": "~/GeorgiumJobrator"
     },
     {
       "name": "BAP",
@@ -540,29 +546,6 @@
       "registry_name": "bap",
       "metadata": {
         "files": []
-      }
-    },
-    {
-      "name": "GeorginatorItemInInventoryTick",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "georginator_item_in_inventory_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bap/procedures/GeorginatorItemInInventoryTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
       }
     },
     {
@@ -577,7 +560,69 @@
           "src/main/java/net/mcreator/bap/item/GeorginatorItem.java",
           "src/main/resources/assets/bap/models/item/georginator.json"
         ]
-      }
+      },
+      "path": "~/Georginator"
+    },
+    {
+      "name": "GeorginatorInInventoryTick",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georginator_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/GeorginatorInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Georginator"
+    },
+    {
+      "name": "GeorginatorPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georginator_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bap/procedures/GeorginatorPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Georginator"
+    },
+    {
+      "name": "GeorginatorRightclicked",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "georginator_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Georginator"
     }
   ],
   "variable_elements": [],
@@ -601,6 +646,14 @@
     "children": [
       {
         "name": "ProgessBarDisplays",
+        "children": []
+      },
+      {
+        "name": "Georginator",
+        "children": []
+      },
+      {
+        "name": "GeorgiumJobrator",
         "children": []
       }
     ]

@@ -1,57 +1,13 @@
 {
-  "minecraft:recipes/transportation/acacia_boat": {
+  "minecraft:husbandry/root": {
     "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
-    },
-    "done": true
-  },
-  "minecraft:adventure/root": {
-    "criteria": {
-      "killed_by_something": "2023-03-31 13:37:54 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/jungle_boat": {
-    "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/mangrove_boat": {
-    "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2023-03-31 13:36:28 +0300"
+      "consumed_item": "2023-04-01 02:58:58 +0300"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:sparse_jungle": "2023-03-31 13:26:34 +0300",
-      "minecraft:stony_shore": "2023-03-31 13:26:05 +0300",
-      "minecraft:plains": "2023-03-31 13:23:47 +0300"
+      "minecraft:plains": "2023-04-01 02:58:09 +0300"
     },
     "done": false
   },

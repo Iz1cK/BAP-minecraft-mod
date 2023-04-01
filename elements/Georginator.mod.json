@@ -12,7 +12,7 @@
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 10,
+    "useDuration": 5,
     "toolType": 1.0,
     "damageCount": 64,
     "recipeRemainder": {
@@ -29,10 +29,16 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "GeorginatorItemInInventoryTick"
+    "onRightClickedInAir": {
+      "name": "GeorginatorRightclicked"
     },
-    "isFood": false,
+    "onItemInInventoryTick": {
+      "name": "GeorginatorInInventoryTick"
+    },
+    "onFinishUsingItem": {
+      "name": "GeorginatorPlayerFinishesUsingItem"
+    },
+    "isFood": true,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
